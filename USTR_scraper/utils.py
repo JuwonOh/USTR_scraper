@@ -4,7 +4,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from time import gmtime, strftime
 
-news_dateformat = '%A, %B %d, %Y'
+news_dateformat = '%m/%d/%Y'
 user_dateformat = '%Y-%m-%d'
 
 def now():
