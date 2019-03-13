@@ -1,4 +1,5 @@
 import re
+from dateutil.parser import parse
 from .utils import get_soup
 from .utils import now
 
@@ -29,7 +30,7 @@ def parse_page(url):
 
         json_object = {
             'title' : title,
-            'time' : time,
+            'time' : parse(time),
             'content' : content,
             'url' : url,
             'scrap_time' : now()
